@@ -685,6 +685,10 @@ h3 {
         padding-left: 16px;
     }
 
+    .footer__icons {
+        color: #171717;
+    }
+
     /* Navbar Styling */
     .navbar {
         height: 50px;
@@ -849,12 +853,15 @@ h3 {
     .footer__container {
         padding: 1rem 1rem;
         width: 100%;
-        display: block;
+        height: 100%;
+        display: table;
     }
 
     #dzigne__logo--footer {
+        display: block;
         height: 2rem;
         margin-top: 1rem;
+        justify-self: center;
     }
 
     .footer__content {
@@ -863,15 +870,22 @@ h3 {
 
     .footer__content--text {
         margin: 0 0;
+        justify-items: center;
     }
 
     .footer__content--text h1 {
         font-size: 1.5rem;
+
     }
 
     .footer__content--text p {
         font-size: 1rem;
         margin-bottom: 0.5rem;
+    }
+
+    .social__footer {
+        justify-self: center;
+        margin: 1rem 0;
     }
 
     .divider__container .divider {
@@ -880,6 +894,7 @@ h3 {
         height: 1px;
         background: #171717;
         margin: 1rem 0;
+
     }
 
     #logo__divider {
@@ -887,11 +902,29 @@ h3 {
     }
 
     .footer__nav {
+        display: none;
         margin: 0.5rem o;
+        justify-items: center;
     }
 
-    .footer__menu {
-        list-style-type: none;
+    .contato__footer {
+        display: block;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .mailto {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #171717;
+        line-height: 1;
+    }
+
+    /* TODO: Centralizar o email */
+
+    #mail__icon {
+        margin-right: 0.5rem;
+
     }
 
     .signing {
