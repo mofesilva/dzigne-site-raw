@@ -242,30 +242,92 @@ h3 {
 
 /* Footer Styling */
 .footer {
+    height: 100%;
+    width: 100%;
     background-color: #7fd10c;
-    height: 20vh;
-    position: relative;
-    z-index: 1000;
-
 }
 
 .footer__container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 100%;
-    z-index: 1;
+    padding: 1rem 1rem;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 50px;
+    height: 100%;
+    display: table;
+}
+
+#dzigne__logo--footer {
+    display: block;
+    height: 2rem;
+    margin-top: 1rem;
+    justify-self: center;
 }
 
 .footer__content {
-    display: flex;
+    padding: auto;
 }
 
 .footer__content--text {
-    margin-left: 32px;
+    margin: 0 0;
+    justify-items: center;
+}
+
+.footer__content--text h1 {
+    font-size: 1.5rem;
+
+}
+
+.footer__content--text p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social__footer {
+    justify-self: center;
+    margin: 1rem 0;
+}
+
+.social__footer a {
+    text-decoration: none;
+}
+
+.divider__container {
+    display: none;
+
+}
+
+#logo__divider {
+    margin: 0.5rem 0;
+}
+
+.footer__nav {
+    display: none;
+    margin: 0.5rem o;
+    justify-items: center;
+}
+
+.contact__section {
+    justify-items: start;
+    align-items: start;
+}
+
+.contato__footer {
+    justify-self: start;
+    align-items: start;
+}
+
+.contato__item {
+    display: flex;
+    padding-bottom: 0.5rem;
+    justify-self: start;
+    align-items: start;
+}
+
+
+.contato__to {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #171717;
+    line-height: 1;
 }
 
 .signing {
@@ -274,6 +336,12 @@ h3 {
     position: relative;
     justify-items: center;
     padding-bottom: 16px;
+}
+
+.signing p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    text-align: center;
 }
 
 @media screen and (max-width: 1336px) {
@@ -307,7 +375,7 @@ h3 {
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
     .navbar {
         height: 80px;
         position: relative;
@@ -484,20 +552,58 @@ h3 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .main__img--container {
+        order: 1
+    }
+
+    .main__content {
+        order: 2
+    }
+
+    /* Icon Styling */
+    .fa-code {
+        color: #7fd10c;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .fa-chevron-right {
+        margin-top: 2px;
+        font-size: 1rem;
+        padding-left: 16px;
+    }
+
+    .fa-envelope {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+    }
+
+    .footer__icons {
+        color: #171717;
+        text-decoration: none;
+    }
+
+    .fa-whatsapp {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    /* Navbar Styling */
     .navbar {
-        height: 80px;
+        height: 70px;
         position: relative;
         z-index: 1000;
-
     }
 
     .navbar__container {
         display: flex;
         justify-content: space-between;
-        height: 80px;
+        height: 70px;
         z-index: 1;
         width: 100%;
-        padding: 0;
     }
 
     .navbar__menu {
@@ -510,25 +616,24 @@ h3 {
         top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
-        height: 50vh;
+        height: 100%;
         z-index: -1;
         background-color: #171717;
     }
 
     .navbar__menu.active {
         background: #171717;
-        top: 80px;
+        top: 60px;
         opacity: 1;
         transition: all 0.5s ease;
-
-        height: 50vh;
+        height: auto;
         font-size: 1.6rem;
         z-index: -1;
     }
 
     .navbar__toggle .bar {
         width: 25px;
-        height: 3px;
+        height: 2px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
         background: #171717;
@@ -541,28 +646,25 @@ h3 {
 
     #dzigne__logo {
         width: auto;
-        height: 25px;
-        display: flex;
-        align-items: center;
+        height: 1.5rem;
         cursor: pointer;
-        justify-content: center;
-        align-self: center;
-        padding-left: 25px;
-
+        padding-left: 1.2rem;
     }
 
-    .navbar__links {
+    .navbar__link {
         text-align: center;
         padding: 2rem;
         width: 100%;
         display: table;
+        font-size: 1.3rem;
     }
 
     #mobile-menu {
         position: absolute;
-        top: 20%;
+        top: 12%;
         right: 5%;
         transform: translate(5%, 20%);
+        align-items: center;
     }
 
     #navbar__button {
@@ -575,7 +677,9 @@ h3 {
         justify-content: center;
         align-items: center;
         height: 50px;
+        font-size: 16px;
     }
+
 
     .navbar__toggle .bar {
         display: block;
@@ -588,13 +692,14 @@ h3 {
     }
 
     #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
     }
 
     #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
     }
 
+    /* Hero Section Styling */
     .main__container {
         display: grid;
         grid-template-columns: auto;
@@ -602,24 +707,23 @@ h3 {
         justify-self: center;
         width: 100%;
         height: 100%;
-        margin: 0 0;
-        padding: 0 0;
     }
 
     .main__content {
         padding: 0 auto;
-        margin: 16px auto;
+        margin: 1rem auto;
         justify-items: center;
+        height: 100%;
     }
 
     .main__content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 0.8;
         text-align: center;
     }
 
     .main__content h2 {
-        font-size: 3 rem;
+        font-size: 3rem;
         font-family: 'Rajdhani', sans-serif;
         line-height: 1.2;
         color: #7fd10c;
@@ -629,36 +733,120 @@ h3 {
     .main__content p {
         font-size: 1.3rem;
         text-align: center;
+    }
 
+    .main__button {
+        height: 2.5rem;
+        margin: 1rem 0;
+        width: 40%;
     }
 
     #main__img {
-        height: 200px;
+        height: 9.5rem;
         width: auto;
-        margin: 16px 0;
+        margin: 1rem 0;
     }
 
+    /* Footer Styling */
     .footer {
         height: 100%;
-        align-self: end;
+        width: 100%;
+        background-color: #7fd10c;
+    }
+
+    .footer__container {
+        padding: 1rem 1rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    #dzigne__logo--footer {
+        display: flex;
+        height: 2rem;
+        margin-top: 1rem;
     }
 
     .footer__content {
-        display: block;
-        height: 100%;
+        padding: auto;
+        display: flex;
+        justify-content: space-between;
     }
 
     .footer__content--text {
-        margin-left: 32px;
+        margin: 0 0;
+        padding: 0 0;
+        justify-items: end;
+        text-align: end;
+    }
+
+    .footer__content--text h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .footer__content--text p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .social__footer {
+        justify-self: start;
+        margin: 1rem 0;
+    }
+
+    .social__footer a {
+        text-decoration: none;
+    }
+
+    .divider__container .divider {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #171717;
+        margin: 1rem 0;
+
+    }
+
+    .footer__nav {
+        display: none;
+        margin: 0.5rem o;
+        justify-items: center;
+    }
+
+    .contato__footer {
+        display: block;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .contato__item {
+        display: flex;
+        padding-bottom: 0.5rem;
+    }
+
+
+    .contato__to {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #171717;
+        line-height: 1;
+        font-family: 'League Spartan', sans-serif;
     }
 
     .signing {
         background-color: #7fd10c;
         width: 100%;
-        height: 100%;
         position: relative;
         justify-items: center;
         padding-bottom: 16px;
+    }
+
+    .signing p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        text-align: center;
+        padding: 0 5vw;
     }
 }
 
@@ -685,8 +873,22 @@ h3 {
         padding-left: 16px;
     }
 
+    .fa-envelope {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+    }
+
     .footer__icons {
         color: #171717;
+        text-decoration: none;
+    }
+
+    .fa-whatsapp {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+        font-size: 1.3rem;
     }
 
     /* Navbar Styling */
@@ -848,6 +1050,7 @@ h3 {
     .footer {
         height: 100%;
         width: 100%;
+        background-color: #7fd10c;
     }
 
     .footer__container {
@@ -871,6 +1074,7 @@ h3 {
     .footer__content--text {
         margin: 0 0;
         justify-items: center;
+        text-align: center;
     }
 
     .footer__content--text h1 {
@@ -886,6 +1090,10 @@ h3 {
     .social__footer {
         justify-self: center;
         margin: 1rem 0;
+    }
+
+    .social__footer a {
+        text-decoration: none;
     }
 
     .divider__container .divider {
@@ -910,21 +1118,24 @@ h3 {
     .contato__footer {
         display: block;
         justify-self: center;
-        align-self: center;
+        align-items: center;
     }
 
-    .mailto {
+    .contato__item {
+        display: flex;
+        padding-bottom: 0.5rem;
+        justify-self: center;
+        align-items: end;
+    }
+
+
+    .contato__to {
         text-decoration: none;
         font-size: 1.2rem;
+        font-weight: 500;
         color: #171717;
         line-height: 1;
-    }
-
-    /* TODO: Centralizar o email */
-
-    #mail__icon {
-        margin-right: 0.5rem;
-
+        font-family: 'League Spartan', sans-serif;
     }
 
     .signing {
@@ -939,5 +1150,6 @@ h3 {
         font-size: 0.8rem;
         line-height: 1.2;
         text-align: center;
+        padding: 0 5vw;
     }
 }
