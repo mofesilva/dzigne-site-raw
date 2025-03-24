@@ -1046,6 +1046,10 @@ h3 {
         margin: 1rem 0;
     }
 
+    .social__section a {
+        text-decoration: none;
+    }
+
     /* Footer Styling */
     .footer {
         height: 100%;
@@ -1090,6 +1094,11 @@ h3 {
     .social__footer {
         justify-self: center;
         margin: 1rem 0;
+        text-decoration: none;
+    }
+
+    .social__footer a {
+        text-decoration: none;
     }
 
     .social__footer a {
