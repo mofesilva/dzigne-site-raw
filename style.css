@@ -265,7 +265,21 @@ h3 {
 
 .company__highlights__section h1 {
     padding-right: 4rem;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+}
+
+#confiam__highlight {
+    font-family: 'Rajdhani', sans-serif;
     color: #7fd10c;
+}
+
+#trabalho__highlight {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #7fd10c;
+    color: #171717;
+    padding: 0 0.5rem;
 }
 
 .company__container {
@@ -273,15 +287,24 @@ h3 {
     justify-content: space-between;
     width: 50%;
     justify-self: end;
+    align-items: center;
 }
 
 
 .company__images {
-    width: 15rem;
-    height: auto;
-    right: 10%;
+    width: auto;
+    height: 3.5rem;
 }
 
+#labormed__highlight--logo {
+    height: 5rem;
+    width: auto;
+}
+
+#sigmacon__highlight--logo {
+    width: auto;
+    height: 6rem;
+}
 
 /* Footer Styling */
 .footer {
