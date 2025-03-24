@@ -252,6 +252,37 @@ h3 {
     width: auto;
 }
 
+/* Company highlights Styling */
+.company__highlights__section {
+    width: 100%;
+    display: flex;
+    background-color: #171717;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 35vh;
+    justify-content: space-between;
+}
+
+.company__highlights__section h1 {
+    padding-right: 4rem;
+    color: #7fd10c;
+}
+
+.company__container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    justify-self: end;
+}
+
+
+.company__images {
+    width: 15rem;
+    height: auto;
+    right: 10%;
+}
+
+
 /* Footer Styling */
 .footer {
     height: 100%;
@@ -392,6 +423,8 @@ h3 {
     line-height: 1.2;
     text-align: center;
 }
+
+/* TODO: Otimizar código para que fique menor o CSS */
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .main__img--container {
