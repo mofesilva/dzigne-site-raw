@@ -1,4 +1,4 @@
-const menu = document.querySelector('#mobile-menu');
+const menu = document.querySelector('.mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const instagramLaunch = document.querySelector('.fa-instagram');
 
