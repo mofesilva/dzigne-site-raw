@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     font-family: 'League Spartan', sans-serif;
+
+}
+
+body {
+    margin: 0;
 }
 
 h1 {
@@ -49,7 +54,7 @@ h3 {
     padding-bottom: 1rem;
 }
 
-.fa-chevron-right {
+#hero__button__chevron {
     margin-top: 2px;
     font-size: 18px;
     padding-left: 16px;
@@ -197,6 +202,7 @@ h3 {
     height: 100%;
     background: url('/assets/images/hero-main-background.svg') no-repeat center center;
     background-size: cover;
+    object-fit: cover;
     opacity: 0.15;
     /* Aplica opacidade apenas na imagem */
     mix-blend-mode: difference;
@@ -252,6 +258,10 @@ h3 {
     width: auto;
 }
 
+.social__section a {
+    text-decoration: none;
+}
+
 /* Company highlights Styling */
 .company__highlights__section {
     width: 100%;
@@ -261,6 +271,7 @@ h3 {
     padding: 1rem 2rem;
     height: 35vh;
     justify-content: space-between;
+    max-width: 100%;
 }
 
 .company__highlights__section h1 {
@@ -293,17 +304,118 @@ h3 {
 
 .company__images {
     width: auto;
-    height: 3.5rem;
+    height: clamp(2.5rem, 3vw, 3.5rem);
 }
 
-#labormed__highlight--logo {
-    height: 5rem;
-    width: auto;
+#arion__highlight--logo {
+    height: clamp(2rem, 3vw, 3rem);
 }
 
-#sigmacon__highlight--logo {
+/* .divider__green__container {
+    display: inline;
+    background-color: #171717;
+
+}
+
+.divider__green {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #7fd10c;
+
+} */
+
+/* Carousel Styling */
+
+
+.carousel {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: #7fd10c;
+    justify-content: center;
+    justify-self: center;
+}
+
+.carousel__button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+}
+
+.carousel__button:hover {
+    transition: all 0.3s ease;
+    color: #171717;
+}
+
+.carousel__button.prev {
+    left: 1rem;
+    font-size: 3rem;
+}
+
+.carousel__button.next {
+    right: 1rem;
+    font-size: 3rem;
+}
+
+.carousel__slide {
+    display: block;
+    position: absolute;
+    opacity: 0;
+
+}
+
+.carousel__slide[data-active] {
+    opacity: 1;
+}
+
+.case__study__container {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+.case__study__content {
+    display: block;
+    width: 100%;
+    margin: 0 5rem;
+    align-content: center;
+}
+
+.case__study__content p {
+    color: #171717;
+    font-size: 1.5rem;
+}
+
+
+.case__company__logo {
+    height: 3rem;
     width: auto;
-    height: 6rem;
+    margin: 1rem 0;
+}
+
+.mockup__container {
+    width: 50%;
+    height: 50vh;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.case__mockup {
+    height: 20rem;
+    width: auto;
 }
 
 /* Footer Styling */
@@ -470,7 +582,7 @@ h3 {
         justify-content: start;
     }
 
-    .fa-chevron-right {
+    #hero__button__chevron {
         margin-top: 2px;
         font-size: 1rem;
         padding-left: 16px;
@@ -654,6 +766,59 @@ h3 {
         margin: 1rem 0;
     }
 
+    /* Company highlights Styling */
+    .company__highlights__section {
+        width: 100%;
+        display: block;
+        background-color: #171717;
+        align-content: center;
+        padding: 2rem 1rem;
+        height: auto;
+        justify-content: center;
+        justify-self: center;
+        max-width: 100%;
+    }
+
+    .company__highlights__section h1 {
+        padding: 0;
+        padding-bottom: 2rem;
+        color: #fff;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    #confiam__highlight {
+        font-family: 'Rajdhani', sans-serif;
+        color: #7fd10c;
+    }
+
+    #trabalho__highlight {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: #7fd10c;
+        color: #171717;
+        padding: 0 0.5rem;
+    }
+
+    .company__container {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        justify-self: center;
+        align-items: center;
+    }
+
+
+    .company__images {
+        width: auto;
+        height: clamp(2.5rem, 3vw, 3.5rem);
+    }
+
+    #arion__highlight--logo {
+        height: 2rem;
+    }
+
     /* Footer Styling */
     .footer {
         height: 100%;
@@ -776,7 +941,7 @@ h3 {
         padding-bottom: 1rem;
     }
 
-    .fa-chevron-right {
+    #hero__button__chevron {
         margin-top: 2px;
         font-size: 1rem;
         padding-left: 16px;
@@ -964,6 +1129,59 @@ h3 {
 
     .social__section a {
         text-decoration: none;
+    }
+
+    /* Company highlights Styling */
+    .company__highlights__section {
+        padding: 2rem 1rem;
+        width: 100%;
+        display: block;
+        background-color: #171717;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        justify-self: center;
+        max-width: 100%;
+    }
+
+    .company__highlights__section h1 {
+        padding: 0;
+        padding-bottom: 1rem;
+        color: #fff;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    #confiam__highlight {
+        font-family: 'Rajdhani', sans-serif;
+        color: #7fd10c;
+    }
+
+    #trabalho__highlight {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: #7fd10c;
+        color: #171717;
+        padding: 0 0.5rem;
+    }
+
+    .company__container {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        justify-self: center;
+        align-items: center;
+    }
+
+
+    .company__images {
+        width: auto;
+        height: clamp(1.5rem, 2vw, 2.5rem);
+    }
+
+    #arion__highlight--logo {
+        height: clamp(1rem, 1.5vw, 2rem);
     }
 
     /* Footer Styling */
