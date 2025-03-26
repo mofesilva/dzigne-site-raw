@@ -173,11 +173,11 @@ h3 {
 
 
 /* Main Content CSS */
-.main {
+.hero {
     background-color: #171717;
 }
 
-.main__container {
+.hero__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -193,7 +193,7 @@ h3 {
     overflow: hidden;
 }
 
-.main__container::before {
+.hero__container::before {
     content: "";
     position: absolute;
     top: 0;
@@ -211,36 +211,36 @@ h3 {
     /* Mantém a imagem no fundo */
 }
 
-.main__content {
+.hero__content {
 
     color: #fff;
     width: 100%;
     margin-left: 15vh;
 }
 
-.main__content h1 {
+.hero__content h1 {
     font-size: 3rem;
     line-height: 0.8;
 }
 
-.main__content h2 {
+.hero__content h2 {
     font-size: 4rem;
     font-family: 'Rajdhani', sans-serif;
     line-height: 1.2;
     color: #7fd10c;
 }
 
-.main__content p {
+.hero__content p {
     font-size: 2rem;
 }
 
-.main__button {
+.hero__button {
     width: 50%;
     height: 50px;
     margin: 32px 0 16px 0;
 }
 
-.main__button {
+.hero__button {
     text-decoration: none;
     color: #171717;
     font-size: 1.5rem;
@@ -249,11 +249,11 @@ h3 {
     align-items: center;
 }
 
-.main__img--container {
+.hero__img--container {
     justify-self: center;
 }
 
-#main__img {
+#hero__img {
     height: 400px;
     width: auto;
 }
@@ -335,6 +335,7 @@ h3 {
     background-color: #7fd10c;
     justify-content: center;
     justify-self: center;
+    overflow: hidden;
 }
 
 .carousel__button {
@@ -347,8 +348,6 @@ h3 {
     transform: translateY(-50%);
     color: rgba(0, 0, 0, .5);
     cursor: pointer;
-    border-radius: .25rem;
-    padding: 0 .5rem;
 }
 
 .carousel__button:hover {
@@ -358,23 +357,30 @@ h3 {
 
 .carousel__button.prev {
     left: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    z-index: 4;
 }
 
 .carousel__button.next {
     right: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    z-index: 4;
 }
 
 .carousel__slide {
     display: block;
     position: absolute;
     opacity: 0;
+    transition: 600ms opacity ease-in-out;
+    transition-delay: 600ms;
+    z-index: 0;
 
 }
 
 .carousel__slide[data-active] {
     opacity: 1;
+    transition-delay: 0;
+    z-index: 2;
 }
 
 .case__study__container {
@@ -400,9 +406,9 @@ h3 {
 
 
 .case__company__logo {
-    height: 3rem;
+    height: 5rem;
     width: auto;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .mockup__container {
@@ -413,9 +419,87 @@ h3 {
 
 }
 
+.slide__button {
+    margin-top: 1.5rem;
+    height: 2.7rem;
+    width: 25%;
+    color: #171717;
+    font-size: 1rem;
+    z-index: 3;
+    border: 2px solid #171717;
+    border-radius: 0.5rem;
+}
+
+.slide__button:hover {
+    background: #171717;
+    color: #7fd10c;
+    transition: all 0.3s ease;
+
+}
+
 .case__mockup {
     height: 20rem;
     width: auto;
+}
+
+/* Services section styling */
+.services__container {
+    background-color: #171717;
+    height: 50vh;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+
+}
+
+.services__container h1 {
+    font-size: 2rem;
+    color: #7fd10c;
+}
+
+.services__list {
+    display: flex;
+    list-style: none;
+    padding: 2rem 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.service__item {
+    justify-content: center;
+    color: #fff;
+    width: 25%;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.service__item__content h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #7fd10c;
+}
+
+.service__item__content p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+#code__icon__services {
+    color: #7fd10c;
+    font-size: 3rem;
+}
+
+.fa-user-plus {
+    color: #7fd10c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-users {
+    color: #7fd10c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 /* Footer Styling */
@@ -562,11 +646,11 @@ h3 {
 /* TODO: Otimizar código para que fique menor o CSS */
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .main__img--container {
+    .hero__img--container {
         order: 1
     }
 
-    .main__content {
+    .hero__content {
         order: 2
     }
 
@@ -719,7 +803,7 @@ h3 {
     }
 
     /* Hero Section Styling */
-    .main__container {
+    .hero__container {
         display: grid;
         grid-template-columns: auto;
         align-items: center;
@@ -728,20 +812,20 @@ h3 {
         height: 100%;
     }
 
-    .main__content {
+    .hero__content {
         padding: 0 auto;
         margin: 1rem auto;
         justify-items: center;
         height: 100%;
     }
 
-    .main__content h1 {
+    .hero__content h1 {
         font-size: 2rem;
         line-height: 0.8;
         text-align: center;
     }
 
-    .main__content h2 {
+    .hero__content h2 {
         font-size: 3rem;
         font-family: 'Rajdhani', sans-serif;
         line-height: 1.2;
@@ -749,18 +833,18 @@ h3 {
         text-align: center;
     }
 
-    .main__content p {
+    .hero__content p {
         font-size: 1.3rem;
         text-align: center;
     }
 
-    .main__button {
+    .hero__button {
         height: 2.5rem;
         margin: 1rem 0;
         width: 40%;
     }
 
-    #main__img {
+    #hero__img {
         height: 9.5rem;
         width: auto;
         margin: 1rem 0;
@@ -926,11 +1010,11 @@ h3 {
 
 @media screen and (max-width: 767px) {
 
-    .main__img--container {
+    .hero__img--container {
         order: 1
     }
 
-    .main__content {
+    .hero__content {
         order: 2
     }
 
@@ -1081,7 +1165,7 @@ h3 {
     }
 
     /* Hero Section Styling */
-    .main__container {
+    .hero__container {
         display: grid;
         grid-template-columns: auto;
         align-items: center;
@@ -1090,19 +1174,19 @@ h3 {
         height: 100%;
     }
 
-    .main__content {
+    .hero__content {
         padding: 0 auto;
         margin: 1rem auto;
         justify-items: center;
     }
 
-    .main__content h1 {
+    .hero__content h1 {
         font-size: 2rem;
         line-height: 0.8;
         text-align: center;
     }
 
-    .main__content h2 {
+    .hero__content h2 {
         font-size: 2.5rem;
         font-family: 'Rajdhani', sans-serif;
         line-height: 1.2;
@@ -1110,18 +1194,18 @@ h3 {
         text-align: center;
     }
 
-    .main__content p {
+    .hero__content p {
         font-size: 1.3rem;
         text-align: center;
     }
 
-    .main__button {
+    .hero__button {
         height: 2.5rem;
         margin: 1rem 0;
         width: 80%;
     }
 
-    #main__img {
+    #hero__img {
         height: 9.5rem;
         width: auto;
         margin: 1rem 0;
