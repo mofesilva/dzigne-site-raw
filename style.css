@@ -35,7 +35,8 @@ h3 {
 .fa-brands {
     font-size: 1.5rem;
     text-decoration: none;
-    color: #fff;
+    color: #eeeeee;
+    transition: all 0.3s ease;
 }
 
 .fa-brands:hover {
@@ -120,7 +121,7 @@ h3 {
 }
 
 .navbar__link {
-    color: #fff;
+    color: #eeeeee;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,6 +130,7 @@ h3 {
     height: 100%;
     font-weight: 600;
     font-family: 'Rajdhani', sans-serif;
+    transition: all 0.3s ease;
 
 }
 
@@ -164,6 +166,7 @@ h3 {
     font-weight: 900;
     color: #171717;
     font-family: 'Rajdhani', sans-serif;
+    transition: all 0.3s ease;
 }
 
 .button:hover {
@@ -213,7 +216,7 @@ h3 {
 
 .hero__content {
 
-    color: #fff;
+    color: #eeeeee;
     width: 100%;
     margin-left: 15vh;
 }
@@ -276,7 +279,7 @@ h3 {
 
 .company__highlights__section h1 {
     padding-right: 4rem;
-    color: #fff;
+    color: #eeeeee;
     font-family: 'Rajdhani', sans-serif;
     font-size: 3rem;
 }
@@ -293,22 +296,20 @@ h3 {
     padding: 0 0.5rem;
 }
 
+
 .company__container {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    justify-self: end;
+    justify-self: start;
     align-items: center;
+    margin: 1rem;
 }
 
 
 .company__images {
-    width: auto;
-    height: clamp(2.5rem, 3vw, 3.5rem);
-}
-
-#arion__highlight--logo {
-    height: clamp(2rem, 3vw, 3rem);
+    height: auto;
+    width: 15rem
 }
 
 /* .divider__green__container {
@@ -332,7 +333,7 @@ h3 {
     width: 100%;
     height: 50vh;
     position: relative;
-    background-color: #7fd10c;
+    background-color: #eeeeee;
     justify-content: center;
     justify-self: center;
     overflow: hidden;
@@ -348,6 +349,7 @@ h3 {
     transform: translateY(-50%);
     color: rgba(0, 0, 0, .5);
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .carousel__button:hover {
@@ -406,10 +408,11 @@ h3 {
 
 
 .case__company__logo {
-    height: 5rem;
+    height: 10rem;
     width: auto;
     margin-bottom: 1rem;
 }
+
 
 .mockup__container {
     width: 50%;
@@ -423,11 +426,13 @@ h3 {
     margin-top: 1.5rem;
     height: 2.7rem;
     width: 25%;
+    background-color: #eee;
     color: #171717;
     font-size: 1rem;
     z-index: 3;
     border: 2px solid #171717;
     border-radius: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 .slide__button:hover {
@@ -444,50 +449,68 @@ h3 {
 
 /* Services section styling */
 .services__container {
-    background-color: #171717;
+    background-color: #7fd10c;
     height: 50vh;
     align-content: center;
     justify-content: center;
-    color: #fff;
+    color: #eeeeee;
     text-align: center;
 
 }
 
+
 .services__container h1 {
     font-size: 2rem;
-    color: #7fd10c;
+    color: #171717;
 }
 
 .services__list {
     display: flex;
     list-style: none;
     padding: 2rem 2rem;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
 }
 
 .service__item {
+    background-color: #171717;
     justify-content: center;
-    color: #fff;
+    color: #eeeeee;
     width: 25%;
     text-align: center;
-    margin-right: 1rem;
+    margin: 0 2rem;
+    padding: 2rem 2rem;
+    border-radius: 25px;
+    transition: all 0.5s ease;
 }
 
+.service__item:hover {
+    scale: 1.1;
+    transition: all 0.5s ease;
+}
+
+
 .service__item__content h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: #7fd10c;
 }
 
 .service__item__content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.3;
 }
 
 #code__icon__services {
     color: #7fd10c;
     font-size: 3rem;
+    margin: 0;
+}
+
+.services__icons {
+    color: #7fd10c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .fa-user-plus {
@@ -866,7 +889,7 @@ h3 {
     .company__highlights__section h1 {
         padding: 0;
         padding-bottom: 2rem;
-        color: #fff;
+        color: #eeeeee;
         font-family: 'Rajdhani', sans-serif;
         font-size: 2rem;
         text-align: center;
@@ -1231,7 +1254,7 @@ h3 {
     .company__highlights__section h1 {
         padding: 0;
         padding-bottom: 1rem;
-        color: #fff;
+        color: #eeeeee;
         font-family: 'Rajdhani', sans-serif;
         font-size: 1.2rem;
         text-align: center;
