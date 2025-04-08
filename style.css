@@ -272,7 +272,7 @@ h3 {
 .company__highlights__section {
     width: 100%;
     display: flex;
-    background-color: #171717;
+    background-color: #eee;
     align-items: center;
     padding: 1rem 2rem;
     height: 35vh;
@@ -282,15 +282,11 @@ h3 {
 
 .company__highlights__section h1 {
     padding-right: 4rem;
-    color: #eeeeee;
+    color: #171717;
     font-family: 'Rajdhani', sans-serif;
     font-size: 3rem;
 }
 
-#confiam__highlight {
-    font-family: 'Rajdhani', sans-serif;
-    color: #7fd10c;
-}
 
 #trabalho__highlight {
     font-family: 'Rajdhani', sans-serif;
@@ -336,7 +332,7 @@ h3 {
     width: 100%;
     height: 50vh;
     position: relative;
-    background-color: #eeeeee;
+    background-color: #171717;
     justify-content: center;
     justify-self: center;
     overflow: hidden;
@@ -357,19 +353,21 @@ h3 {
 
 .carousel__button:hover {
     transition: all 0.3s ease;
-    color: #171717;
+    color: #eee;
 }
 
 .carousel__button.prev {
     left: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     z-index: 4;
+    color: #eee;
 }
 
 .carousel__button.next {
     right: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     z-index: 4;
+    color: #eee;
 }
 
 .carousel__slide {
@@ -405,7 +403,7 @@ h3 {
 }
 
 .case__study__content p {
-    color: #171717;
+    color: #eee;
     font-size: 1.5rem;
 }
 
@@ -422,18 +420,18 @@ h3 {
     height: 50vh;
     justify-content: center;
     align-content: center;
-
 }
+
+
 
 .slide__button {
     margin-top: 1.5rem;
     height: 2.7rem;
     width: 25%;
-    background-color: #eee;
+    background-color: #7fd10c;
     color: #171717;
     font-size: 1rem;
     z-index: 3;
-    border: 2px solid #171717;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
@@ -441,6 +439,7 @@ h3 {
 .slide__button:hover {
     background: #171717;
     color: #7fd10c;
+    border: 2px solid #7fd10c;
     transition: all 0.3s ease;
 
 }
@@ -887,7 +886,7 @@ h3 {
     .company__highlights__section {
         width: 100%;
         display: block;
-        background-color: #171717;
+        background-color: #eee;
         align-content: center;
         padding: 2rem 1rem;
         height: auto;
@@ -899,17 +898,13 @@ h3 {
     .company__highlights__section h1 {
         padding: 0;
         padding-bottom: 2rem;
-        color: #eeeeee;
+        color: #171717;
         font-family: 'Rajdhani', sans-serif;
         font-size: 2rem;
         text-align: center;
         width: 100%;
     }
 
-    #confiam__highlight {
-        font-family: 'Rajdhani', sans-serif;
-        color: #7fd10c;
-    }
 
     #trabalho__highlight {
         font-family: 'Rajdhani', sans-serif;
@@ -1253,7 +1248,7 @@ h3 {
         padding: 2rem 1rem;
         width: 100%;
         display: block;
-        background-color: #171717;
+        background-color: #eee;
         align-items: center;
         height: auto;
         justify-content: center;
@@ -1264,17 +1259,13 @@ h3 {
     .company__highlights__section h1 {
         padding: 0;
         padding-bottom: 1rem;
-        color: #eeeeee;
+        color: #171717;
         font-family: 'Rajdhani', sans-serif;
         font-size: 1.2rem;
         text-align: center;
         width: 100%;
     }
 
-    #confiam__highlight {
-        font-family: 'Rajdhani', sans-serif;
-        color: #7fd10c;
-    }
 
     #trabalho__highlight {
         font-family: 'Rajdhani', sans-serif;
