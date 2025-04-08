@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'League Spartan', sans-serif;
-
 }
 
 body {
@@ -53,6 +52,10 @@ h3 {
     color: #7fd10c;
     font-size: 2rem;
     padding-bottom: 1rem;
+}
+
+.fa-heart {
+    margin: 0 0.3rem;
 }
 
 #hero__button__chevron {
@@ -462,6 +465,13 @@ h3 {
 .services__container h1 {
     font-size: 2rem;
     color: #171717;
+    cursor: default;
+    user-select: none;
+}
+
+.services__container p {
+    cursor: default;
+    user-select: none;
 }
 
 .services__list {
