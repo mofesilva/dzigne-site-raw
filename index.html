@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzign-e</title>
+    <!-- CSS Stylesheet import -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome import -->
+    <link rel="stylesheet" href="assets/icons/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img src="/assets/images/dzigne-logo-white.png" alt="Logotipo Dzign-e" id="dzigne__logo">
+            <div class="navbar__toggle mobile-menu" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__link">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/about-us/about-us.html" class="navbar__link">
+                        Inside Dzign-e
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/cases/cases.html" class="navbar__link">
+                        Cases de sucesso
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__link">
+                        Plataformas
+                    </a>
+                </li>
+                <li id="navbar__button">
+                    <a href="/" class="button">
+                        <i class="fa-solid fa-envelope"></i> CONTATO
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero section -->
+    <section aria-label="Hero section">
+        <div class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <i class="fa-solid fa-code"></i>
+                    <h1>DO CONCEITO</h1>
+                    <h2>AO LANÇAMENTO</h2>
+                    <p>Criamos o software ideal pra você!</p>
+                    <a href="cases.html" class="hero__button button">
+                        Cases <i class="fa-solid fa-chevron-right" id="hero__button__chevron"></i>
+                    </a>
+                    <div class="social__section">
+                        <a href="https://www.instagram.com/dzign.e/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/dzigne/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__img--container">
+                    <img id="hero__img" src="/assets/images/main-detail.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Company highlights section -->
+    <section aria-label="Company highlights section">
+        <div class="company__highlights__section">
+            <h1 class="highlight__title">Empresas que inovaram <br />com a nossa
+                <span id="trabalho__highlight">expertise!</span>
+            </h1>
+            <div class="company__container">
+                <img src="/assets/images/logos/labormed.png" alt="" class="company__images"
+                    id="labormed__highlight--logo">
+                <img src="/assets/images/logos/arion.png" alt="" class="company__images" id="arion__highlight--logo">
+                <img src="/assets/images/logos/mackenzie.png" alt="" class="company__images" id="mack__highlight--logo">
+            </div>
+        </div>
+    </section>
+    <!-- Carousel section -->
+    <section aria-label="Case studies sections">
+        <div class="carousel" data-carousel>
+            <button class="carousel__button prev" data-carousel-button="prev"><i class="fa-solid fa-chevron-left"
+                    id="arrow__prev"></i></button>
+            <button class="carousel__button next" data-carousel-button="next"><i class="fa-solid fa-chevron-right"
+                    id="arrow__next"></i></button>
+            <ul data-slides>
+                <li class="carousel__slide" data-active>
+                    <div class="case__study__container">
+                        <div class="case__study__content">
+                            <img src="/assets/images/logos/mackenzie1.png" alt="" class="case__company__logo">
+                            <p class="case__description">A Universidade Mackenzie enfrentava o desafio de melhorar a
+                                preparação dos seus alunos para o exame da OAB,
+                                identificando a ausência de uma ferramenta que oferecesse simulados práticos e
+                                específicos. Em resposta, a Dzign-e
+                                desenvolveu uma plataforma personalizada, composta por um aplicativo móvel para alunos e
+                                uma interface web para
+                                professores. A solução proporcionou uma experiência intuitiva e produtiva de estudos,
+                                permitindo gestão eficiente do
+                                conteúdo e resultando em uma preparação mais robusta para os estudantes.</p>
+                            <a href="/cases/cases.html" class="slide__button button">
+                                Saiba mais <i class="fa-solid fa-chevron-right" id="slide__button__chevron"></i>
+                            </a>
+                        </div>
+                        <div class="mockup__container">
+                            <img src="/assets/images/oab-mockup.png" alt="" class="case__mockup">
+                        </div>
+
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="case__study__container">
+                        <div class="case__study__content">
+                            <img src="/assets/images/logos/labormed1.png" alt="" class="case__company__logo">
+                            <p class="case__description">A Universidade Mackenzie enfrentava o desafio de melhorar a
+                                preparação dos seus alunos para o exame da OAB,
+                                identificando a ausência de uma ferramenta que oferecesse simulados práticos e
+                                específicos. Em resposta, a Dzign-e
+                                desenvolveu uma plataforma personalizada, composta por um aplicativo móvel para alunos e
+                                uma interface web para
+                                professores. A solução proporcionou uma experiência intuitiva e produtiva de estudos,
+                                permitindo gestão eficiente do
+                                conteúdo e resultando em uma preparação mais robusta para os estudantes.</p>
+                            <a href="/cases/cases.html" class="slide__button button">
+                                Saiba mais <i class="fa-solid fa-chevron-right" id="slide__button__chevron"></i>
+                            </a>
+                        </div>
+                        <div class="mockup__container">
+                            <img src="/assets/images/oab-mockup.png" alt="" class="case__mockup">
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <div class="case__study__container">
+                        <div class="case__study__content">
+                            <img src="/assets/images/logos/sigmacon1png.png" alt="" class="case__company__logo">
+                            <p class="case__description">AA Universidade Mackenzie enfrentava o desafio de melhorar a
+                                preparação dos seus alunos para o exame da OAB,
+                                identificando a ausência de uma ferramenta que oferecesse simulados práticos e
+                                específicos. Em resposta, a Dzign-e
+                                desenvolveu uma plataforma personalizada, composta por um aplicativo móvel para alunos e
+                                uma interface web para
+                                professores. A solução proporcionou uma experiência intuitiva e produtiva de estudos,
+                                permitindo gestão eficiente do
+                                conteúdo e resultando em uma preparação mais robusta para os estudantes.</p>
+                            <a href="/cases/cases.html" class="slide__button button">
+                                Saiba mais <i class="fa-solid fa-chevron-right" id="slide__button__chevron"></i>
+                            </a>
+                        </div>
+                        <div class="mockup__container">
+                            <img src="/assets/images/oab-mockup.png" alt="" class="case__mockup">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services sections -->
+    <section aria-label="Services section">
+        <div class="services__container">
+            <h1 class="services__container__title">Nossos serviços</h1>
+            <ul class="services__list">
+                <li class="service__item">
+                    <div class="service__item__content">
+                        <i class="fa-solid fa-code services__icons" id="code__icon__services"></i>
+                        <h1 class="service__item__title">Desenvolvimento</h1>
+                        <p class="service__item__description">Acreditamos no poder de projetos desenvolvidos sob medida,
+                            alinhados às necessidades do seu negócio.</p>
+                    </div>
+                </li>
+                <li class="service__item">
+                    <div class="service__item__content">
+                        <i class="fa-solid fa-user-plus services__icons"></i>
+                        <h1 class="service__item__title">Alocação de equipes</h1>
+                        <p class="service__item__description">Montamos times sob demanda com os perfis certos para
+                            acelerar sua entrega com qualidade e eficiência.</p>
+                    </div>
+                </li>
+                <li class="service__item">
+                    <div class="service__item__content">
+                        <i class="fa-solid fa-users services__icons"></i>
+                        <h1 class="service__item__title">Tecnologia proprietária</h1>
+                        <p class="service__item__description">Através da nossa tecnologia proprietária, seu aplicativo
+                            fica pronto ainda mais rápido!</p>
+                    </div>
+                </li>
+                <li class="service__item">
+                    <div class="service__item__content">
+                        <i class="fa-solid fa-cloud services__icons"></i>
+                        <h1 class="service__item__title">Infraestrutura</h1>
+                        <p class="service__item__description">Oferecemos toda instratura para seu sistema ou aplicativo
+                            ficar rodando, na nuvem!</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Provas sociais section -->
+    <section aria-label="Provas sociais section">
+        <div class="social__proof__container">
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="contact__section">
+                    <img src="/assets/images/dzigne-logo-black.png" alt="Logotipo Dzign-e" id="dzigne__logo--footer">
+                    <div class="social__footer">
+                        <a href="https://www.instagram.com/dzign.e/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram footer__icons"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/dzigne/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in footer__icons"></i>
+                        </a>
+                    </div>
+                    <div class="contato__footer">
+                        <div class="contato__item"><i class="fa-solid fa-envelope footer__icons" id="mail__icon"></i>
+                            <a href="mailto:contato@dzign-e.com.br" class="contato__to">contato@dzign-e.com.br</a>
+                        </div>
+                        <div class="contato__item">
+                            <i class="fa-brands fa-whatsapp footer__icons"></i>
+                            <a href="https://wa.me/5519999094848" target="_blank" rel="noopener noreferrer"
+                                class="contato__to">(19)
+                                99909-4848</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider__container">
+                    <span class="divider" id="logo__divider"></span>
+                </div>
+
+                <div class="address__footer__section">
+                    <div class="footer__content--text">
+                        <h1>CAMPINAS</h1>
+                        <p>Av. Ântonio Artioli, 570, Lojas 07 e 08<br />
+                            Swiss Park - Campinas <br />
+                            São Paulo - Brasil</p>
+                    </div>
+                    <div class="footer__content--text">
+                        <h1>BELO HORIZONTE</h1>
+                        <p>Rua Professor Pimenta da Veiga, 78<br />
+                            Cidade Nova - Belo Horizonte <br />
+                            Minas Gerais - Brasil</p>
+                    </div>
+                    <div class="footer__content--text">
+                        <h1>LEGNANO</h1>
+                        <p>Av. Joaquim José Diniz, 78, 602<br />
+                            Cidade Nova - Legnano <br />
+                            Minas Gerais - Itália</p>
+                    </div>
+                </div>
+                <div class="divider__container">
+                    <span class="divider"></span>
+                </div>
+                <div class="footer__nav">
+                    <h1 class="footer__nav__title">A DZIGN-E</h1>
+                    <ul class="footer__menu">
+                        <li class="footer__menu__item">
+                            <a href="/" class="footer__menu__link">
+                                Contato
+                            </a>
+                        </li>
+                        <li class="nfooter__menu__item">
+                            <a href="/about-us/about-us.html" class="footer__menu__link">
+                                Inside Dzign-e
+                            </a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="/cases/cases.html" class="footer__menu__link">
+                                Cases
+                            </a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="/" class="footer__menu__link">
+                                Plataformas
+                            </a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="/" class="footer__menu__link">
+                                Políticas de privacidade
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="signing">
+            <p>Made with <i class="fa-regular fa-beat fa-heart"></i> by Dzign-e Sistemas e Tecnolgia LTDA
+                16.950.862/0001-15
+            </p>
+        </div>
+    </div>
+</footer>
+
+</html>

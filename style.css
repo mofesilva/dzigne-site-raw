@@ -1,0 +1,1417 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Rajhdani', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+/* Icons Styling */
+.fa-envelope {
+    margin-top: 1px;
+    padding-right: 0.5rem;
+    align-self: center;
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #eeeeee;
+    transition: all 0.3s ease;
+}
+
+.fa-brands:hover {
+    color: #95f50e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fa-instagram {
+    padding-right: 1rem;
+}
+
+.fa-code {
+    color: #7fd10c;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.fa-heart {
+    margin: 0 0.3rem;
+}
+
+#hero__button__chevron {
+    margin-top: 2px;
+    font-size: 18px;
+    padding-left: 16px;
+}
+
+.footer__icons {
+    color: #171717;
+    text-decoration: none;
+}
+
+.fa-whatsapp {
+    padding: 0 0;
+    padding-right: 0.5rem;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #171717;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#dzigne__logo {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    align-self: center;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    max-width: 2160px;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__link {
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-weight: 600;
+    font-family: 'Rajdhani', sans-serif;
+    transition: all 0.3s ease;
+
+}
+
+.navbar__link:hover {
+    color: #95f50e;
+    transition: all 0.3s ease;
+    animation: forwards;
+}
+
+
+#navbar__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1rem;
+    width: 20%;
+
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 80%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #7fd10c;
+    font-weight: 900;
+    color: #171717;
+    font-family: 'Rajdhani', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #95f50e;
+    transition: all 0.3s ease;
+}
+
+
+/* Main Content CSS */
+.hero {
+    background-color: #171717;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 70vh;
+    background-color: #171717;
+    z-index: 1;
+    width: 100%;
+    padding: 0 50px;
+    position: relative;
+    /* Necessário para o ::before funcionar */
+    overflow: hidden;
+}
+
+.hero__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/hero-main-background.svg') no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.15;
+    /* Aplica opacidade apenas na imagem */
+    mix-blend-mode: difference;
+    /* Aplica o efeito de mesclagem */
+    z-index: -1;
+    /* Mantém a imagem no fundo */
+}
+
+.hero__content {
+
+    color: #eeeeee;
+    width: 100%;
+    margin-left: 15vh;
+}
+
+.hero__content h1 {
+    font-size: 3rem;
+    line-height: 0.8;
+}
+
+.hero__content h2 {
+    font-size: 4rem;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.2;
+    color: #7fd10c;
+}
+
+.hero__content p {
+    font-size: 2rem;
+}
+
+.hero__button {
+    width: 50%;
+    height: 50px;
+    margin: 32px 0 16px 0;
+}
+
+.hero__button {
+    text-decoration: none;
+    color: #171717;
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    align-items: center;
+}
+
+.hero__img--container {
+    justify-self: center;
+}
+
+#hero__img {
+    height: 400px;
+    width: auto;
+}
+
+.social__section a {
+    text-decoration: none;
+}
+
+/* Company highlights Styling */
+.company__highlights__section {
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 35vh;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.company__highlights__section h1 {
+    padding-right: 4rem;
+    color: #171717;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+}
+
+
+#trabalho__highlight {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #7fd10c;
+    color: #171717;
+    padding: 0 0.5rem;
+}
+
+
+.company__container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    justify-self: start;
+    align-items: center;
+    margin: 1rem;
+}
+
+
+.company__images {
+    height: auto;
+    width: 15rem
+}
+
+/* .divider__green__container {
+    display: inline;
+    background-color: #171717;
+
+}
+
+.divider__green {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #7fd10c;
+
+} */
+
+/* Carousel Styling */
+
+
+.carousel {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: #171717;
+    justify-content: center;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.carousel__button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel__button:hover {
+    transition: all 0.3s ease;
+    color: #eee;
+}
+
+.carousel__button.prev {
+    left: 1rem;
+    font-size: 2rem;
+    z-index: 4;
+    color: #eee;
+}
+
+.carousel__button.next {
+    right: 1rem;
+    font-size: 2rem;
+    z-index: 4;
+    color: #eee;
+}
+
+.carousel__slide {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: 600ms opacity ease-in-out;
+    transition-delay: 600ms;
+    z-index: 0;
+
+}
+
+.carousel__slide[data-active] {
+    opacity: 1;
+    transition-delay: 0;
+    z-index: 2;
+}
+
+.case__study__container {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+.case__study__content {
+    display: block;
+    width: 100%;
+    margin: 0 5rem;
+    align-content: center;
+}
+
+.case__study__content p {
+    color: #eee;
+    font-size: 1.5rem;
+}
+
+
+.case__company__logo {
+    height: 10rem;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+
+.mockup__container {
+    width: 50%;
+    height: 50vh;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.slide__button {
+    margin-top: 1.5rem;
+    height: 2.7rem;
+    width: 25%;
+    background-color: #7fd10c;
+    color: #171717;
+    font-size: 1rem;
+    z-index: 3;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.slide__button:hover {
+    background: #171717;
+    color: #7fd10c;
+    border: 2px solid #7fd10c;
+    transition: all 0.3s ease;
+
+}
+
+.case__mockup {
+    height: 20rem;
+    width: auto;
+}
+
+/* Services section styling */
+.services__container {
+    background-color: #7fd10c;
+    height: 50vh;
+    align-content: center;
+    justify-content: center;
+    color: #eeeeee;
+    text-align: center;
+
+}
+
+
+.services__container h1 {
+    font-size: 2rem;
+    color: #171717;
+    cursor: default;
+    user-select: none;
+}
+
+.services__container p {
+    cursor: default;
+    user-select: none;
+}
+
+.services__list {
+    display: flex;
+    list-style: none;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.service__item {
+    background-color: #171717;
+    justify-content: center;
+    color: #eeeeee;
+    width: 25%;
+    text-align: center;
+    margin: 0 2rem;
+    padding: 2rem 2rem;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.service__item:hover {
+    scale: 1.1;
+    transition: all 0.5s ease;
+}
+
+
+.service__item__content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #7fd10c;
+}
+
+.service__item__content p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+#code__icon__services {
+    color: #7fd10c;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.services__icons {
+    color: #7fd10c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-user-plus {
+    color: #7fd10c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-users {
+    color: #7fd10c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styling */
+.footer {
+    height: 100%;
+    width: 100%;
+    background-color: #7fd10c;
+    padding: 0 2rem;
+}
+
+.footer__container {
+    padding: 1rem 1rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#dzigne__logo--footer {
+    display: block;
+    height: 2rem;
+    margin-top: 1rem;
+    justify-self: start;
+}
+
+.footer__content {
+    padding: auto;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+.footer__content--text {
+    margin: 0 1rem;
+    justify-items: start;
+    align-self: center;
+}
+
+.footer__content--text h1 {
+    font-size: 1.5rem;
+
+}
+
+.footer__content--text p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social__footer {
+    justify-self: Start;
+    margin: 1rem 0;
+}
+
+.address__footer__section {
+    display: flex;
+    justify-content: start;
+}
+
+.social__footer a {
+    text-decoration: none;
+}
+
+.divider__container {
+    display: inline;
+}
+
+
+.divider__container .divider {
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #171717;
+    margin: 0 1rem;
+
+}
+
+#logo__divider {
+    margin: 0 1rem;
+}
+
+.footer__nav {
+    display: block;
+    margin: 0 0;
+    justify-items: center;
+    align-self: center;
+    padding: 0 1rem;
+}
+
+.footer__nav h1 {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.footer__menu {
+    list-style: none;
+    justify-content: end;
+}
+
+.footer__menu__link {
+    text-decoration: none;
+    color: #171717;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.contact__section {
+    justify-items: start;
+    align-items: start;
+}
+
+.contato__footer {
+    display: block;
+    justify-self: center;
+    align-items: center;
+}
+
+.contato__item {
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+
+
+.contato__to {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #171717;
+    line-height: 1;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.signing {
+    background-color: #7fd10c;
+    width: 100%;
+    position: relative;
+    justify-items: center;
+    padding: 1rem 0;
+}
+
+.signing p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* TODO: Otimizar código para que fique menor o CSS */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .hero__img--container {
+        order: 1
+    }
+
+    .hero__content {
+        order: 2
+    }
+
+    /* Icon Styling */
+    .fa-code {
+        color: #7fd10c;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .address__footer__section {
+        display: block;
+        justify-content: start;
+    }
+
+    #hero__button__chevron {
+        margin-top: 2px;
+        font-size: 1rem;
+        padding-left: 16px;
+    }
+
+    .fa-envelope {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+    }
+
+    .footer__icons {
+        color: #171717;
+        text-decoration: none;
+    }
+
+    .fa-whatsapp {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+        height: 70px;
+        position: relative;
+        z-index: 1000;
+        position: sticky;
+    }
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 100%;
+        z-index: -1;
+        background-color: #171717;
+    }
+
+    .navbar__menu.active {
+        background: #171717;
+        top: 60px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: auto;
+        font-size: 1.6rem;
+        padding: 0 0;
+        margin: 0;
+        z-index: -1;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 2px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #171717;
+
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    #dzigne__logo {
+        width: auto;
+        height: 1.5rem;
+        cursor: pointer;
+        padding: 0 2rem;
+    }
+
+    .navbar__link {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        font-size: 1.3rem;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 25%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        align-items: center;
+    }
+
+    #navbar__button {
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+        background-color: #7fd10c;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Hero Section Styling */
+    .hero__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero__content {
+        padding: 0 auto;
+        margin: 1rem auto;
+        justify-items: center;
+        height: 100%;
+    }
+
+    .hero__content h1 {
+        font-size: 2rem;
+        line-height: 0.8;
+        text-align: center;
+    }
+
+    .hero__content h2 {
+        font-size: 3rem;
+        font-family: 'Rajdhani', sans-serif;
+        line-height: 1.2;
+        color: #7fd10c;
+        text-align: center;
+    }
+
+    .hero__content p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .hero__button {
+        height: 2.5rem;
+        margin: 1rem 0;
+        width: 40%;
+    }
+
+    #hero__img {
+        height: 9.5rem;
+        width: auto;
+        margin: 1rem 0;
+    }
+
+    /* Company highlights Styling */
+    .company__highlights__section {
+        width: 100%;
+        display: block;
+        background-color: #eee;
+        align-content: center;
+        padding: 2rem 1rem;
+        height: auto;
+        justify-content: center;
+        justify-self: center;
+        max-width: 100%;
+    }
+
+    .company__highlights__section h1 {
+        padding: 0;
+        padding-bottom: 2rem;
+        color: #171717;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    #trabalho__highlight {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: #7fd10c;
+        color: #171717;
+        padding: 0 0.5rem;
+    }
+
+    .company__container {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        justify-self: center;
+        align-items: center;
+    }
+
+
+    .company__images {
+        width: auto;
+        height: clamp(2.5rem, 3vw, 3.5rem);
+    }
+
+    #arion__highlight--logo {
+        height: 2rem;
+    }
+
+    /* Footer Styling */
+    .footer {
+        height: 100%;
+        width: 100%;
+        background-color: #7fd10c;
+        padding: 0;
+
+    }
+
+    .footer__container {
+        padding: 1rem 1rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    #dzigne__logo--footer {
+        display: inline;
+        height: 2rem;
+        margin: 0;
+    }
+
+    .footer__content {
+        padding: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__content--text {
+        margin: 0 0;
+        padding: 0 0;
+        justify-items: end;
+        text-align: end;
+    }
+
+    .footer__content--text h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .footer__content--text p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .social__footer {
+        justify-self: start;
+        margin: 1rem 0;
+    }
+
+    .social__footer a {
+        text-decoration: none;
+    }
+
+    .divider__container {
+        display: none;
+    }
+
+    .divider__container .divider {
+        display: none;
+
+    }
+
+    .footer__nav {
+        display: none;
+        margin: 0.5rem o;
+        justify-items: center;
+    }
+
+    .contato__footer {
+        display: block;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .contato__item {
+        display: flex;
+        padding-bottom: 0.5rem;
+    }
+
+
+    .contato__to {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #171717;
+        line-height: 1;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .signing {
+        background-color: #7fd10c;
+        width: 100%;
+        position: relative;
+        justify-items: center;
+        padding-bottom: 16px;
+    }
+
+    .signing p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        text-align: center;
+        padding: 0 5vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .hero__img--container {
+        order: 1
+    }
+
+    .hero__content {
+        order: 2
+    }
+
+    /* Icon Styling */
+    .fa-code {
+        color: #7fd10c;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #hero__button__chevron {
+        margin-top: 2px;
+        font-size: 1rem;
+        padding-left: 16px;
+    }
+
+    .fa-envelope {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+    }
+
+    .footer__icons {
+        color: #171717;
+        text-decoration: none;
+    }
+
+    .fa-whatsapp {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+        height: 50px;
+        position: relative;
+        width: 100%;
+        justify-self: start;
+        z-index: 1000;
+        position: sticky;
+    }
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 100%;
+        z-index: -1;
+        background-color: #171717;
+    }
+
+    .navbar__menu.active {
+        background: #171717;
+        top: 50px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: auto;
+        font-size: 1.6rem;
+        z-index: -1;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 2px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #171717;
+
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    #dzigne__logo {
+        width: auto;
+        height: 1.1rem;
+        display: flex;
+        cursor: pointer;
+        align-self: center;
+        padding: 0 1.2rem;
+
+    }
+
+    .navbar__link {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        font-size: 16px;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 12%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        align-items: center;
+    }
+
+    #navbar__button {
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+        background-color: #7fd10c;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Hero Section Styling */
+    .hero__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero__content {
+        padding: 0 auto;
+        margin: 1rem auto;
+        justify-items: center;
+    }
+
+    .hero__content h1 {
+        font-size: 2rem;
+        line-height: 0.8;
+        text-align: center;
+    }
+
+    .hero__content h2 {
+        font-size: 2.5rem;
+        font-family: 'Rajdhani', sans-serif;
+        line-height: 1.2;
+        color: #7fd10c;
+        text-align: center;
+    }
+
+    .hero__content p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .hero__button {
+        height: 2.5rem;
+        margin: 1rem 0;
+        width: 80%;
+    }
+
+    #hero__img {
+        height: 9.5rem;
+        width: auto;
+        margin: 1rem 0;
+    }
+
+    .social__section a {
+        text-decoration: none;
+    }
+
+    /* Company highlights Styling */
+    .company__highlights__section {
+        padding: 2rem 1rem;
+        width: 100%;
+        display: block;
+        background-color: #eee;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        justify-self: center;
+        max-width: 100%;
+    }
+
+    .company__highlights__section h1 {
+        padding: 0;
+        padding-bottom: 1rem;
+        color: #171717;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    #trabalho__highlight {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: #7fd10c;
+        color: #171717;
+        padding: 0 0.5rem;
+    }
+
+    .company__container {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        justify-self: center;
+        align-items: center;
+    }
+
+
+    .company__images {
+        width: auto;
+        height: clamp(1.5rem, 2vw, 2.5rem);
+    }
+
+    #arion__highlight--logo {
+        height: clamp(1rem, 1.5vw, 2rem);
+    }
+
+    /* Footer Styling */
+    .footer {
+        height: 100%;
+        width: 100%;
+        background-color: #7fd10c;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .footer__container {
+        padding: 1rem 1rem;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+    }
+
+    #dzigne__logo--footer {
+        display: block;
+        height: 2rem;
+        margin-top: 1rem;
+        justify-self: center;
+    }
+
+    .footer__content {
+        padding: auto;
+        display: table;
+        justify-items: center;
+    }
+
+    .footer__content--text {
+        display: inline;
+        margin: 0 0;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__content--text h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .footer__content--text p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .address__footer__section {
+        display: block;
+        justify-content: start;
+    }
+
+    .social__footer {
+        justify-self: center;
+        margin: 1rem 0;
+        text-decoration: none;
+    }
+
+    .social__footer a {
+        text-decoration: none;
+    }
+
+    .divider__container {
+        display: inline;
+    }
+
+
+    .divider__container .divider {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #171717;
+        margin: 1rem 0;
+
+    }
+
+    #logo__divider {
+        margin: 0.5rem 0;
+    }
+
+    .footer__nav {
+        display: none;
+        margin: 0.5rem o;
+        justify-items: center;
+    }
+
+    .contato__footer {
+        display: block;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .contato__item {
+        display: flex;
+        padding-bottom: 0.5rem;
+        justify-self: center;
+        align-items: end;
+    }
+
+
+    .contato__to {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #171717;
+        line-height: 1;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .signing {
+        background-color: #7fd10c;
+        width: 100%;
+        position: relative;
+        justify-items: center;
+        padding-bottom: 16px;
+    }
+
+    .signing p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        text-align: center;
+        padding: 0 5vw;
+    }
+}
