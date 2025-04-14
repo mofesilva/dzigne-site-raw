@@ -291,8 +291,8 @@ h3 {
 
 #trabalho__highlight {
     font-family: 'Rajdhani', sans-serif;
-    background-color: #7fd10c;
-    color: #171717;
+    background-color: #171717;
+    color: #7fd10c;
     padding: 0 0.5rem;
 }
 
@@ -624,6 +624,8 @@ h3 {
 .company__highlights__title {
     background-color: #171717;
     color: #7fd10c;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0 0.5rem;
 }
 
 .companies__list {
