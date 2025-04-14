@@ -31,6 +31,7 @@ h3 {
     align-self: center;
 }
 
+.hero__brands,
 .fa-brands {
     font-size: 1.5rem;
     text-decoration: none;
@@ -38,7 +39,7 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.fa-brands:hover {
+.hero__brands:hover {
     color: #95f50e;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -274,7 +275,7 @@ h3 {
     display: flex;
     background-color: #eee;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     height: 35vh;
     justify-content: space-between;
     max-width: 100%;
@@ -310,20 +311,6 @@ h3 {
     height: auto;
     width: 15rem
 }
-
-/* .divider__green__container {
-    display: inline;
-    background-color: #171717;
-
-}
-
-.divider__green {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: #7fd10c;
-
-} */
 
 /* Carousel Styling */
 
@@ -451,18 +438,25 @@ h3 {
 
 /* Services section styling */
 .services__container {
-    background-color: #7fd10c;
-    height: 50vh;
+    background-color: #eee;
     align-content: center;
     justify-content: center;
     color: #eeeeee;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 
 }
 
-
-.services__container h1 {
+.service__item__title {
     font-size: 2rem;
+    color: #171717;
+    cursor: default;
+    user-select: none;
+}
+
+.services__container__title {
+    font-size: 3rem;
     color: #171717;
     cursor: default;
     user-select: none;
@@ -482,9 +476,9 @@ h3 {
 }
 
 .service__item {
-    background-color: #171717;
+    background-color: #d8d8d8;
     justify-content: center;
-    color: #eeeeee;
+    color: #171717;
     width: 25%;
     text-align: center;
     margin: 0 2rem;
@@ -502,7 +496,7 @@ h3 {
 .service__item__content h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #7fd10c;
+    color: #171717;
 }
 
 .service__item__content p {
@@ -511,19 +505,19 @@ h3 {
 }
 
 #code__icon__services {
-    color: #7fd10c;
+    color: #171717;
     font-size: 3rem;
     margin: 0;
 }
 
 .services__icons {
-    color: #7fd10c;
+    color: #171717;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .fa-user-plus {
-    color: #7fd10c;
+    color: #171717;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -532,6 +526,142 @@ h3 {
     color: #7fd10c;
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+/* About us Styling */
+.about__us__container {
+    background-color: #eee;
+    padding: 0 4rem;
+    width: 100%;
+    color: #171717;
+    justify-items: center;
+}
+
+.about__us__content {
+    width: 50%;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.about__us__content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.about__us__content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.about__us__content p {
+    font-size: 1.3rem;
+}
+
+.about__button {
+    width: 20rem;
+}
+
+/* Statistics Styling */
+.statistic__container {
+    background-color: #171717;
+}
+
+.statistic__content {
+    color: #eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.statistic__info__card {
+    justify-items: center;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.statistic__info__card h1 {
+    font-size: 2rem;
+    background-color: #7fd10c;
+    color: #171717;
+    padding: 0 0.3rem;
+    margin: 0.5rem 0;
+    margin-top: 1rem;
+}
+
+.statistic__info__card p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.statistic__info__card i {
+    color: #7fd10c;
+    font-size: 2rem;
+}
+
+.statistic__highlights {
+    background-color: #7fd10c;
+    color: #171717;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.companies__container {
+    background-color: #eee;
+    padding: 2rem 5rem;
+}
+
+.companies__content h1 {
+    font-size: 3rem;
+    justify-self: center;
+}
+
+.company__highlights__title {
+    background-color: #171717;
+    color: #7fd10c;
+}
+
+.companies__list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite quebrar linha quando não houver espaço */
+    gap: 16px;
+    /* Espaçamento horizontal e vertical entre os itens */
+    list-style: none;
+    /* Remove a bolinha padrão de lista */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    /* Centraliza as logos (opcional) */
+}
+
+.company__item {
+    flex: 0 1 auto;
+    /* Itens podem encolher ou crescer se precisar */
+    /* flex-basis: 150px; Se quiser definir uma largura base aproximada */
+}
+
+.company__logo {
+    width: 250px;
+    /* Tamanho da logo, ajuste como preferir */
+    height: auto;
+    image-rendering: crisp-edges;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.company__logo:hover {
+    width: 250px;
+    /* Tamanho da logo, ajuste como preferir */
+    height: auto;
+    image-rendering: crisp-edges;
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 /* Footer Styling */
@@ -929,6 +1059,32 @@ h3 {
 
     #arion__highlight--logo {
         height: 2rem;
+    }
+
+    .services__container {
+        justify-items: center;
+    }
+
+    .services__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        list-style: none;
+        justify-items: center;
+    }
+
+    .service__item {
+        width: 100%;
+    }
+
+    .statistic__container {
+        justify-items: center;
+    }
+
+    .statistic__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 
     /* Footer Styling */
