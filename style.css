@@ -313,8 +313,6 @@ h3 {
 }
 
 /* Carousel Styling */
-
-
 .carousel {
     width: 100%;
     height: 50vh;
@@ -409,8 +407,6 @@ h3 {
     align-content: center;
 }
 
-
-
 .slide__button {
     margin-top: 1.5rem;
     height: 2.7rem;
@@ -443,8 +439,8 @@ h3 {
     justify-content: center;
     color: #eeeeee;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
 
 }
 
@@ -541,7 +537,7 @@ h3 {
     width: 50%;
     justify-items: center;
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
 }
 
 .about__us__content h1 {
@@ -613,11 +609,12 @@ h3 {
 
 .companies__container {
     background-color: #eee;
-    padding: 2rem 5rem;
+    padding: 6rem 5rem;
 }
 
 .companies__content h1 {
     font-size: 3rem;
+    padding-bottom: 2rem;
     justify-self: center;
 }
 
