@@ -1,0 +1,45 @@
+.case__hero__container {
+    background-color: #171717;
+    height: 35vh;
+    padding: 1rem 2rem;
+}
+
+.case__hero__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.case__hero__mockup {
+    margin-right: 5rem;
+}
+
+.case__hero__logo {
+    height: 5rem;
+    width: auto;
+}
+
+.case__hero__title {
+    justify-content: start;
+}
+
+.case__hero__title h1 {
+    font-size: 5rem;
+    color: #eee;
+    line-height: 1;
+}
+
+.case__hero__title p {
+    margin: 0 4px;
+    font-size: 2.5rem;
+    color: #7fd10c;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.case__hero__highlight {
+    background-color: #7fd10c;
+    color: #171717;
+    padding: 0.3rem 0.3rem;
+    font-weight: 600;
+}
