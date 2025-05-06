@@ -5,6 +5,7 @@
     font-family: 'League Spartan', sans-serif;
 }
 
+
 body {
     margin: 0;
 }
@@ -454,7 +455,7 @@ h3 {
     color: #eeeeee;
     text-align: center;
     padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding-bottom: 3qrem;
 
 }
 
@@ -1369,7 +1370,7 @@ h3 {
 
     .hero__content {
         padding: 0 auto;
-        margin: 1rem auto;
+        margin: 0.5rem auto;
         justify-items: center;
     }
 
