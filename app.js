@@ -76,5 +76,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar");
+    const trigger = 50;                 // pixels de scroll para ativar
 
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > trigger) {
+            navbar.classList.add("navbar--shrink");
+        } else {
+            navbar.classList.remove("navbar--shrink");
+        }
+    });
+});
 
