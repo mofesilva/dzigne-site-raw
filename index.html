@@ -10,6 +10,7 @@
     <!-- Google Fonts import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rajdhani:wght@100..900&display=swap"
         rel="stylesheet">
@@ -101,7 +102,55 @@
         </div>
     </section>
     <!-- Carousel section -->
-    <section aria-label="Case studies sections">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="case__study__container">
+                    <div class="mockup__container">
+                        <img src="/assets/images/oab-mockup.png" alt="" class="case__mockup">
+                    </div>
+                    <div class="case__study__content">
+                        <img src="/assets/images/logos/mackenzie1.png" alt="" class="case__company__logo">
+                        <p class="case__description">Auxiliamos a Universidade Mackenzie no desenvolvimento uma
+                            plataforma personalizada, composta por um aplicativo móvel para alunos e
+                            uma interface web para
+                            professores. A solução proporcionou uma experiência intuitiva e produtiva de estudos,
+                            permitindo gestão eficiente do
+                            conteúdo e resultando em uma preparação mais robusta para os estudantes.</p>
+                        <a href="/cases/cases.html" class="slide__button button">
+                            Saiba mais <i class="fa-solid fa-chevron-right" id="slide__button__chevron"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="case__study__container">
+                    <img src="/assets/images/logos/mackenzie1.png" alt="" class="case__company__logo">
+                    <div class="case__study__content">
+                        <p class="case__description">Auxiliamos a Universidade Mackenzie no desenvolvimento uma
+                            plataforma personalizada, composta por um aplicativo móvel para alunos e
+                            uma interface web para
+                            professores. A solução proporcionou uma experiência intuitiva e produtiva de estudos,
+                            permitindo gestão eficiente do
+                            conteúdo e resultando em uma preparação mais robusta para os estudantes.</p>
+                        <a href="/cases/cases.html" class="slide__button button">
+                            Saiba mais <i class="fa-solid fa-chevron-right" id="slide__button__chevron"></i>
+                        </a>
+                    </div>
+                    <div class="mockup__container">
+                        <img src="/assets/images/oab-mockup.png" alt="" class="case__mockup">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <!-- <section aria-label="Case studies sections">
         <div class="carousel" data-carousel>
             <button class="carousel__button prev" data-carousel-button="prev"><i class="fa-solid fa-chevron-left"
                     id="arrow__prev"></i></button>
@@ -174,7 +223,7 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
     <!-- Services sections -->
     <section aria-label="Services section">
         <div class="services__container">
@@ -302,6 +351,19 @@
     <section aria-label="Provas sociais section">
     </section>
     <script src="/javascript/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 <footer>
     <div class="footer">

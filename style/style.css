@@ -13,6 +13,7 @@ html {
 }
 
 
+
 body {
     margin: 0;
 }
@@ -327,6 +328,22 @@ h3 {
 }
 
 /* Carousel Styling */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    background-color: #171717;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .carousel__container {
     display: block;
     background-color: #171717;
@@ -370,7 +387,8 @@ h3 {
     color: #eee;
 }
 
-.carousel__button.next {
+.carousel__button.next,
+.swiper-button-next {
     right: 1rem;
     font-size: 2rem;
     z-index: 4;

@@ -1,11 +1,11 @@
 const menu = document.querySelector('.mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
-
 menu.addEventListener('click', function () {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 })
+
 
 // Carrossel: Passar slides + automatizar slides
 let autoSlideInterval = null; // armazenamos o setInterval global
