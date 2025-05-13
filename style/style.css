@@ -13,7 +13,6 @@ html {
 }
 
 
-
 body {
     margin: 0;
 }
@@ -278,8 +277,11 @@ h3 {
 }
 
 #hero__img {
-    height: 400px;
+    height: 350px;
     width: auto;
+    margin: 2rem;
+    border-radius: 25px;
+    outline: solid #7fd10c 3px;
 }
 
 .social__section a {
@@ -293,7 +295,7 @@ h3 {
     background-color: #eee;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: 3rem 3rem;
     overflow: hidden;
 }
 
@@ -324,14 +326,14 @@ h3 {
 .company__images {
     height: auto;
     width: clamp(5rem, 12rem, 20rem);
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 /* Carousel Styling */
 
-.swiper {
+.mySwiper {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #171717;
 }
 
@@ -341,75 +343,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.carousel__container {
-    display: block;
-    background-color: #171717;
-    height: 100%;
-    width: 100%;
-}
-
-.carousel {
-    display: block;
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background-color: #171717;
-    justify-content: center;
-    justify-self: center;
-    overflow: hidden;
-}
-
-.carousel__button {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(0, 0, 0, .5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.carousel__button:hover {
-    transition: all 0.3s ease;
-    color: #eee;
-}
-
-.carousel__button.prev {
-    left: 1rem;
-    font-size: 2rem;
-    z-index: 4;
-    color: #eee;
-}
-
-.carousel__button.next,
-.swiper-button-next {
-    right: 1rem;
-    font-size: 2rem;
-    z-index: 4;
-    color: #eee;
-}
-
-.carousel__slide {
-    margin: 3rem 0;
-    display: block;
-    position: absolute;
-    opacity: 0;
-    transition: 600ms opacity ease-in-out;
-    transition-delay: 600ms;
-    z-index: 0;
-
-}
-
-.carousel__slide[data-active] {
-    opacity: 1;
-    transition-delay: 0;
-    z-index: 2;
+    margin: 2rem 0;
 }
 
 .case__study__container {
@@ -418,37 +352,45 @@ h3 {
     text-align: start;
     width: 100%;
     height: 100%;
-    padding: 0 2rem;
+    padding: 0 5rem;
 }
 
 .case__study__content {
     display: block;
-    width: 100%;
-    margin: 0 5rem;
+    width: 1000%;
     align-content: center;
+    justify-content: start;
+    justify-items: start;
+    text-align: start;
 }
 
 .case__study__content p {
     color: #eee;
     font-size: 1.5rem;
+    margin-left: 0.7rem;
 }
 
 
 .case__company__logo {
-    height: 10rem;
+    height: 5rem;
     width: auto;
     margin-bottom: 1rem;
+    padding: 0;
+
 }
 
 
 .mockup__container {
-    margin: 1rem 2rem;
     justify-content: center;
+    justify-items: center;
+    justify-self: center;
     align-content: center;
+    text-align: center;
 }
 
 .slide__button {
     margin-top: 1.5rem;
+    margin-left: 0.7rem;
     height: 2.7rem;
     width: 25%;
     background-color: #7fd10c;
@@ -468,8 +410,24 @@ h3 {
 }
 
 .case__mockup {
-    height: 20rem;
+    height: 25rem;
     width: auto;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #7fd10c;
+}
+
+.swiper-pagination-bullet {
+    background: #eee;
+}
+
+.swiper-pagination-bullet-active {
+    background: #7fd10c;
 }
 
 /* Services section styling */
@@ -645,6 +603,48 @@ h3 {
     color: #171717;
     padding: 0.5rem;
     font-weight: 600;
+}
+
+.swiper-wrapper {
+    width: 50%;
+}
+
+.prova__social__carrossel {
+    background-color: #eee;
+    padding: 2rem 3rem;
+}
+
+.prova__social__slide {
+    background-color: #d8d8d8;
+    border-radius: 25px;
+    padding: 1rem 1rem;
+
+}
+
+.depoimento__imagem__perfil {
+    height: 20rem;
+    width: auto;
+    border-radius: 9px;
+
+}
+
+.depoimento__content {
+    text-align: start;
+    align-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.depoimento__texto {
+    text-align: start;
+    line-height: 1.2;
+}
+
+.depoimento__pessoa {
+    margin-top: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+
 }
 
 .companies__container {
@@ -1429,7 +1429,7 @@ h3 {
     }
 
     #hero__img {
-        height: 9.5rem;
+        height: 12rem;
         width: auto;
         margin: 1rem 0;
     }
@@ -1518,6 +1518,8 @@ h3 {
         padding: 0 0.5rem;
         align-content: center;
         justify-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .case__study__content p {
@@ -1533,8 +1535,8 @@ h3 {
 
     .case__company__logo {
         order: 2;
-        height: auto;
-        width: 45%;
+        height: 5rem;
+        width: auto;
         justify-self: center;
     }
 
@@ -1555,6 +1557,7 @@ h3 {
         z-index: 3;
         border-radius: 0.5rem;
         transition: all 0.3s ease;
+        justify-self: center;
     }
 
     /* Services section styling */
@@ -1635,12 +1638,21 @@ h3 {
         margin: 0;
     }
 
+    .companies__content h1 {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        justify-self: center;
+        text-align: center;
+    }
+
     /* Footer Styling */
     .footer {
         height: 100%;
         width: 100%;
         background-color: #7fd10c;
         justify-items: center;
+        justify-content: center;
+        text-align: center;
         padding: 0;
     }
 
@@ -1649,19 +1661,20 @@ h3 {
         width: 100%;
         height: 100%;
         justify-items: center;
+        text-align: center;
     }
 
     #dzigne__logo--footer {
-        display: block;
+        display: inline;
         height: 2rem;
         margin-top: 1rem;
-        justify-self: center;
     }
 
     .footer__content {
         padding: auto;
         display: table;
         justify-items: center;
+        text-align: center;
     }
 
     .footer__content--text {
@@ -1720,17 +1733,30 @@ h3 {
         justify-items: center;
     }
 
-    .contato__footer {
-        display: block;
+    .contact__section {
+        width: 100%;
+        text-align: center;
         justify-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .contato__footer {
+        width: 100%;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
         align-items: center;
+        text-align: center;
     }
 
     .contato__item {
         display: flex;
         padding-bottom: 0.5rem;
         justify-self: center;
-        align-items: end;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
 
