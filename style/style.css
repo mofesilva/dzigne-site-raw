@@ -1,0 +1,1786 @@
+html {
+    font-size: 16px;
+    /* ou 62.5% se você usar a convenção 1rem = 10px */
+    -webkit-text-size-adjust: 100%;
+    /* impede zoom de texto automático no iOS */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Rajhdani', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+/* Icons Styling */
+.fa-envelope {
+    margin-top: 1px;
+    padding-right: 0.5rem;
+    align-self: center;
+}
+
+.hero__brands,
+.fa-brands {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #eeeeee;
+    transition: all 0.3s ease;
+}
+
+.hero__brands:hover {
+    color: #95f50e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fa-instagram {
+    padding-right: 1rem;
+}
+
+.fa-code {
+    color: #7fd10c;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.fa-heart {
+    margin: 0 0.3rem;
+}
+
+#hero__button__chevron {
+    margin-top: 2px;
+    font-size: 18px;
+    padding-left: 1rem;
+}
+
+.footer__icons {
+    color: #171717;
+    text-decoration: none;
+}
+
+.fa-whatsapp {
+    padding: 0 0;
+    padding-right: 0.5rem;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #171717;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    transition: all 0.2s ease;
+    z-index: 999;
+}
+
+/* estado encolhido */
+.navbar--shrink {
+    height: 80px;
+    transition: all 0.2s ease;
+    /* altura quando rolar */
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#dzigne__logo {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    align-self: center;
+}
+
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    max-width: 2160px;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__link {
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-weight: 600;
+    font-family: 'Rajdhani', sans-serif;
+    transition: all 0.3s ease;
+
+}
+
+.navbar__link:hover {
+    color: #95f50e;
+    transition: all 0.3s ease;
+    animation: forwards;
+}
+
+
+#navbar__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1rem;
+    width: 20%;
+
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 80%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #7fd10c;
+    font-weight: 900;
+    color: #171717;
+    font-family: 'Rajdhani', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #95f50e;
+    transition: all 0.3s ease;
+}
+
+
+/* Main Content CSS */
+.hero {
+    background-color: #171717;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    background-color: #171717;
+    z-index: 1;
+    width: 100%;
+    padding: 3rem 50px;
+    position: relative;
+    /* Necessário para o ::before funcionar */
+    overflow: hidden;
+}
+
+.hero__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/hero-main-background.svg') no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.15;
+    /* Aplica opacidade apenas na imagem */
+    mix-blend-mode: difference;
+    /* Aplica o efeito de mesclagem */
+    z-index: -1;
+    /* Mantém a imagem no fundo */
+}
+
+.hero__content {
+
+    color: #eeeeee;
+    width: 100%;
+    margin-left: 15vh;
+}
+
+.hero__content h1 {
+    font-size: 3rem;
+    line-height: 0.8;
+}
+
+.hero__content h2 {
+    font-size: 4rem;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.2;
+    color: #7fd10c;
+}
+
+.hero__content p {
+    font-size: 2rem;
+}
+
+.hero__button {
+    width: 50%;
+    height: 50px;
+    margin: 32px 0 16px 0;
+}
+
+.hero__button {
+    text-decoration: none;
+    color: #171717;
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    align-items: center;
+}
+
+.hero__img--container {
+    justify-self: center;
+}
+
+#hero__img {
+    height: 350px;
+    width: auto;
+    margin: 2rem;
+    border-radius: 25px;
+    outline: solid #7fd10c 3px;
+}
+
+.social__section a {
+    text-decoration: none;
+}
+
+/* Company highlights Styling */
+.company__highlights__section {
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+    overflow: hidden;
+}
+
+.company__highlights__section h1 {
+    padding-right: 4rem;
+    color: #171717;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+}
+
+
+#trabalho__highlight {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #171717;
+    color: #7fd10c;
+    padding: 0 0.5rem;
+}
+
+
+.company__container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 1rem;
+}
+
+
+.company__images {
+    height: auto;
+    width: clamp(5rem, 12rem, 20rem);
+    margin-left: 1rem;
+}
+
+/* Carousel Styling */
+
+.mySwiper {
+    width: 100%;
+    height: auto;
+    background-color: #171717;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.case__study__container {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    padding: 0 5rem;
+}
+
+.case__study__content {
+    display: block;
+    width: 1000%;
+    align-content: center;
+    justify-content: start;
+    justify-items: start;
+    text-align: start;
+}
+
+.case__study__content p {
+    color: #eee;
+    font-size: 1.5rem;
+    margin-left: 0.7rem;
+}
+
+
+.case__company__logo {
+    height: 5rem;
+    width: auto;
+    margin-bottom: 1rem;
+    padding: 0;
+
+}
+
+
+.mockup__container {
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+.slide__button {
+    margin-top: 1.5rem;
+    margin-left: 0.7rem;
+    height: 2.7rem;
+    width: 25%;
+    background-color: #7fd10c;
+    color: #171717;
+    font-size: 1rem;
+    z-index: 3;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.slide__button:hover {
+    background: #171717;
+    color: #7fd10c;
+    border: 2px solid #7fd10c;
+    transition: all 0.3s ease;
+
+}
+
+.case__mockup {
+    height: 25rem;
+    width: auto;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #7fd10c;
+}
+
+.swiper-pagination-bullet {
+    background: #eee;
+}
+
+.swiper-pagination-bullet-active {
+    background: #7fd10c;
+}
+
+/* Services section styling */
+.services__container {
+    background-color: #eee;
+    align-content: center;
+    justify-content: center;
+    color: #eeeeee;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+
+}
+
+.service__item__title {
+    font-size: 2rem;
+    color: #171717;
+    cursor: default;
+    user-select: none;
+}
+
+.services__container__title {
+    font-size: 3rem;
+    color: #171717;
+    cursor: default;
+    user-select: none;
+}
+
+.services__container p {
+    cursor: default;
+    user-select: none;
+}
+
+.services__list {
+    display: flex;
+    list-style: none;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.service__item {
+    background-color: #d8d8d8;
+    justify-content: center;
+    color: #171717;
+    width: 25%;
+    text-align: center;
+    margin: 0 2rem;
+    padding: 2rem 2rem;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.service__item:hover {
+    scale: 1.1;
+    transition: all 0.5s ease;
+}
+
+
+.service__item__content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #171717;
+}
+
+.service__item__content p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+#code__icon__services {
+    color: #171717;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.services__icons {
+    color: #171717;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-user-plus {
+    color: #171717;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-users {
+    color: #7fd10c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* About us Styling */
+.about__us__container {
+    background-color: #eee;
+    padding: 0 4rem;
+    width: 100%;
+    color: #171717;
+    justify-items: center;
+}
+
+.about__us__content {
+    width: 50%;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.about__us__content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.about__us__content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.about__us__content p {
+    font-size: 1.3rem;
+}
+
+.about__button {
+    width: 20rem;
+}
+
+/* Statistics Styling */
+.statistic__container {
+    background-color: #171717;
+}
+
+.statistic__content {
+    color: #eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.statistic__info__card {
+    justify-items: center;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.statistic__info__card h1 {
+    font-size: 2rem;
+    background-color: #7fd10c;
+    color: #171717;
+    padding: 0 0.3rem;
+    margin: 0.5rem 0;
+    margin-top: 1rem;
+}
+
+.statistic__info__card p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.statistic__info__card i {
+    color: #7fd10c;
+    font-size: 2rem;
+}
+
+.statistic__highlights {
+    background-color: #7fd10c;
+    color: #171717;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.swiper-wrapper {
+    width: 50%;
+}
+
+.prova__social__carrossel {
+    background-color: #eee;
+    padding: 2rem 3rem;
+}
+
+.prova__social__slide {
+    background-color: #d8d8d8;
+    border-radius: 25px;
+    padding: 1rem 1rem;
+
+}
+
+.depoimento__imagem__perfil {
+    height: 20rem;
+    width: auto;
+    border-radius: 9px;
+
+}
+
+.depoimento__content {
+    text-align: start;
+    align-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.depoimento__texto {
+    text-align: start;
+    line-height: 1.2;
+}
+
+.depoimento__pessoa {
+    margin-top: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+
+}
+
+.companies__container {
+    background-color: #eee;
+    padding: 6rem 5rem;
+}
+
+.companies__content h1 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    justify-self: center;
+}
+
+.company__highlights__title {
+    background-color: #171717;
+    color: #7fd10c;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0 0.5rem;
+}
+
+.companies__list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite quebrar linha quando não houver espaço */
+    gap: 16px;
+    /* Espaçamento horizontal e vertical entre os itens */
+    list-style: none;
+    /* Remove a bolinha padrão de lista */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    /* Centraliza as logos (opcional) */
+}
+
+.company__item {
+    flex: 0 1 auto;
+    /* Itens podem encolher ou crescer se precisar */
+    /* flex-basis: 150px; Se quiser definir uma largura base aproximada */
+}
+
+.company__logo {
+    width: 250px;
+    /* Tamanho da logo, ajuste como preferir */
+    height: auto;
+    image-rendering: crisp-edges;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.company__logo:hover {
+    width: 250px;
+    /* Tamanho da logo, ajuste como preferir */
+    height: auto;
+    image-rendering: crisp-edges;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* Footer Styling */
+.footer {
+    height: 100%;
+    width: 100%;
+    background-color: #7fd10c;
+    padding: 0 2rem;
+}
+
+.footer__container {
+    padding: 1rem 1rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#dzigne__logo--footer {
+    display: block;
+    height: 2rem;
+    margin-top: 1rem;
+    justify-self: start;
+}
+
+.footer__content {
+    padding: auto;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+.footer__content--text {
+    margin: 0 1rem;
+    justify-items: start;
+    align-self: center;
+}
+
+.footer__content--text h1 {
+    font-size: 1.5rem;
+
+}
+
+.footer__content--text p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social__footer {
+    justify-self: Start;
+    margin: 1rem 0;
+}
+
+.address__footer__section {
+    display: flex;
+    justify-content: start;
+}
+
+.social__footer a {
+    text-decoration: none;
+}
+
+.divider__container {
+    display: inline;
+}
+
+
+.divider__container .divider {
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #171717;
+    margin: 0 1rem;
+
+}
+
+#logo__divider {
+    margin: 0 1rem;
+}
+
+.footer__nav {
+    display: block;
+    margin: 0 0;
+    justify-items: center;
+    align-self: center;
+    padding: 0 1rem;
+}
+
+.footer__nav h1 {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.footer__menu {
+    list-style: none;
+    justify-content: end;
+}
+
+.footer__menu__link {
+    text-decoration: none;
+    color: #171717;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.contact__section {
+    justify-items: start;
+    align-items: start;
+}
+
+.contato__footer {
+    display: block;
+    justify-self: center;
+    align-items: center;
+}
+
+.contato__item {
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+
+
+.contato__to {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #171717;
+    line-height: 1;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.signing {
+    background-color: #7fd10c;
+    width: 100%;
+    position: relative;
+    justify-items: center;
+    padding: 1rem 0;
+}
+
+.signing p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* TODO: Otimizar código para que fique menor o CSS */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .hero__img--container {
+        order: 1
+    }
+
+    .hero__content {
+        order: 2
+    }
+
+    /* Icon Styling */
+    .fa-code {
+        color: #7fd10c;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .address__footer__section {
+        display: block;
+        justify-content: start;
+    }
+
+    #hero__button__chevron {
+        margin-top: 2px;
+        font-size: 1rem;
+        padding-left: 16px;
+    }
+
+    .fa-envelope {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+    }
+
+    .footer__icons {
+        color: #171717;
+        text-decoration: none;
+    }
+
+    .fa-whatsapp {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+        height: 70px;
+        position: relative;
+        z-index: 1000;
+        position: sticky;
+    }
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 100%;
+        z-index: -1;
+        background-color: #171717;
+    }
+
+    .navbar__menu.active {
+        background: #171717;
+        top: 60px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: auto;
+        font-size: 1.6rem;
+        padding: 0 0;
+        margin: 0;
+        z-index: -1;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 2px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #171717;
+
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    #dzigne__logo {
+        width: auto;
+        height: 1.5rem;
+        cursor: pointer;
+        padding: 0 2rem;
+    }
+
+    .navbar__link {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        font-size: 1.3rem;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 25%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        align-items: center;
+    }
+
+    #navbar__button {
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+        background-color: #7fd10c;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Hero Section Styling */
+    .hero__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero__content {
+        padding: 0 auto;
+        margin: 1rem auto;
+        justify-items: center;
+        height: 100%;
+    }
+
+    .hero__content h1 {
+        font-size: 2rem;
+        line-height: 0.8;
+        text-align: center;
+    }
+
+    .hero__content h2 {
+        font-size: 3rem;
+        font-family: 'Rajdhani', sans-serif;
+        line-height: 1.2;
+        color: #7fd10c;
+        text-align: center;
+    }
+
+    .hero__content p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .hero__button {
+        height: 2.5rem;
+        margin: 1rem 0;
+        width: 40%;
+    }
+
+    #hero__img {
+        height: 9.5rem;
+        width: auto;
+        margin: 1rem 0;
+    }
+
+    /* Company highlights Styling */
+    .company__highlights__section {
+        width: 100%;
+        display: block;
+        background-color: #eee;
+        align-content: center;
+        padding: 2rem 1rem;
+        height: auto;
+        justify-content: center;
+        justify-self: center;
+        max-width: 100%;
+    }
+
+    .company__highlights__section h1 {
+        padding: 0;
+        padding-bottom: 2rem;
+        color: #171717;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    #trabalho__highlight {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: #7fd10c;
+        color: #171717;
+        padding: 0 0.5rem;
+    }
+
+    .company__container {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        justify-self: center;
+        align-items: center;
+    }
+
+
+    .company__images {
+        width: auto;
+        height: 8rem
+    }
+
+    .services__container {
+        justify-items: center;
+    }
+
+    .services__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        list-style: none;
+        justify-items: center;
+    }
+
+    .service__item {
+        width: 100%;
+    }
+
+    .statistic__container {
+        justify-items: center;
+    }
+
+    .statistic__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Footer Styling */
+    .footer {
+        height: 100%;
+        width: 100%;
+        background-color: #7fd10c;
+        padding: 0;
+
+    }
+
+    .footer__container {
+        padding: 1rem 1rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    #dzigne__logo--footer {
+        display: inline;
+        height: 2rem;
+        margin: 0;
+    }
+
+    .footer__content {
+        padding: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__content--text {
+        margin: 0 0;
+        padding: 0 0;
+        justify-items: end;
+        text-align: end;
+    }
+
+    .footer__content--text h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .footer__content--text p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .social__footer {
+        justify-self: start;
+        margin: 1rem 0;
+    }
+
+    .social__footer a {
+        text-decoration: none;
+    }
+
+    .divider__container {
+        display: none;
+    }
+
+    .divider__container .divider {
+        display: none;
+
+    }
+
+    .footer__nav {
+        display: none;
+        margin: 0.5rem o;
+        justify-items: center;
+    }
+
+    .contato__footer {
+        display: block;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .contato__item {
+        display: flex;
+        padding-bottom: 0.5rem;
+    }
+
+
+    .contato__to {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #171717;
+        line-height: 1;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .signing {
+        background-color: #7fd10c;
+        width: 100%;
+        position: relative;
+        justify-items: center;
+        padding-bottom: 16px;
+    }
+
+    .signing p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        text-align: center;
+        padding: 0 5vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .hero__img--container {
+        order: 1
+    }
+
+    .hero__content {
+        order: 2
+    }
+
+    /* Icon Styling */
+    .fa-code {
+        color: #7fd10c;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #hero__button__chevron {
+        margin-top: 2px;
+        font-size: 1rem;
+        padding-left: 16px;
+    }
+
+    .fa-envelope {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+    }
+
+    .footer__icons {
+        color: #171717;
+        text-decoration: none;
+    }
+
+    .fa-whatsapp {
+        padding: 0 0;
+        padding-right: 0.5rem;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+        height: 50px;
+        width: 100%;
+        justify-self: start;
+        z-index: 1000;
+        position: sticky;
+    }
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        top: -950px;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        height: 100%;
+        z-index: -1;
+        background-color: #171717;
+    }
+
+    .navbar__menu.active {
+        background: #171717;
+        top: 50px;
+        opacity: 1;
+        transition: all 0.5s ease-out;
+        height: auto;
+        font-size: 1.6rem;
+        z-index: -1;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 2px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #171717;
+
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    #dzigne__logo {
+        width: auto;
+        height: 1.1rem;
+        display: flex;
+        cursor: pointer;
+        align-self: center;
+        padding: 0 1.2rem;
+
+    }
+
+    .navbar__link {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        font-size: 16px;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 12%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        align-items: center;
+    }
+
+    #navbar__button {
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+        background-color: #7fd10c;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Hero Section Styling */
+    .hero__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero__content {
+        padding: 0 auto;
+        margin: 0.5rem auto;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__content h1 {
+        font-size: 2rem;
+        line-height: 0.8;
+        text-align: center;
+    }
+
+    .hero__content h2 {
+        font-size: 2.3rem;
+        font-family: 'Rajdhani', sans-serif;
+        line-height: 1.2;
+        color: #7fd10c;
+        text-align: center;
+    }
+
+    .hero__content p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+
+    .hero__button {
+        display: block;
+        place-self: center;
+        height: 2.5rem;
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    #hero__img {
+        height: 12rem;
+        width: auto;
+        margin: 1rem 0;
+    }
+
+    .social__section a {
+        text-decoration: none;
+    }
+
+    /* Company highlights Styling */
+    .company__highlights__section {
+        display: block;
+        background-color: #eee;
+        width: 100%;
+    }
+
+    .company__highlights__section h1 {
+        padding: 0;
+        padding-bottom: 0.5rem;
+        color: #171717;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+
+    #trabalho__highlight {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: #7fd10c;
+        color: #171717;
+        padding: 0 0.5rem;
+    }
+
+    .company__container {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0.5rem 1rem;
+        box-sizing: border-box;
+    }
+
+
+    .company__images {
+        width: 5rem;
+        height: auto;
+        margin: 1rem 1rem;
+    }
+
+
+    .carousel {
+        display: block;
+        width: 100%;
+        height: 750px;
+        position: relative;
+        background-color: #171717;
+        justify-content: center;
+        justify-self: center;
+        overflow: hidden;
+    }
+
+    .carousel__slide {
+        margin: 0;
+    }
+
+    .case__study__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .case__study__content {
+        order: 3;
+        display: block;
+        width: auto;
+        margin: 0;
+        padding: 0 0.5rem;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .case__study__content p {
+        color: #eee;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+
+    .mockup__container {
+        order: 1;
+    }
+
+    .case__company__logo {
+        order: 2;
+        height: 5rem;
+        width: auto;
+        justify-self: center;
+    }
+
+    .case__mockup {
+        height: auto;
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+
+    .slide__button {
+        order: 3;
+        margin-top: 1.5rem;
+        height: 2.7rem;
+        width: 50%;
+        background-color: #7fd10c;
+        color: #171717;
+        font-size: 1rem;
+        z-index: 3;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        justify-self: center;
+    }
+
+    /* Services section styling */
+    .services__container {
+        padding-top: 2rem;
+    }
+
+    .services__container__title {
+        font-size: 1.5rem;
+        color: #171717;
+        cursor: default;
+        user-select: none;
+    }
+
+    .service__item {
+        width: auto;
+        margin: 0.5rem 1rem;
+    }
+
+
+    .services__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
+        padding: 0;
+    }
+
+
+    #code__icon__services {
+        color: #171717;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .services__icons {
+        color: #171717;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .fa-user-plus {
+        color: #171717;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .fa-users {
+        color: #7fd10c;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about__us__container {
+        padding: 0 2rem;
+    }
+
+    .about__us__content {
+        width: 100%;
+        justify-items: center;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+
+    .statistic__container {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .statistic__content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .statistic__info__card {
+        justify-items: center;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .companies__content h1 {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        justify-self: center;
+        text-align: center;
+    }
+
+    /* Footer Styling */
+    .footer {
+        height: 100%;
+        width: 100%;
+        background-color: #7fd10c;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer__container {
+        padding: 1rem 1rem;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        text-align: center;
+    }
+
+    #dzigne__logo--footer {
+        display: inline;
+        height: 2rem;
+        margin-top: 1rem;
+    }
+
+    .footer__content {
+        padding: auto;
+        display: table;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__content--text {
+        display: inline;
+        margin: 0 0;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer__content--text h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .footer__content--text p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .address__footer__section {
+        display: block;
+        justify-content: start;
+    }
+
+    .social__footer {
+        justify-self: center;
+        margin: 1rem 0;
+        text-decoration: none;
+    }
+
+    .social__footer a {
+        text-decoration: none;
+    }
+
+    .divider__container {
+        display: inline;
+    }
+
+
+    .divider__container .divider {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #171717;
+        margin: 1rem 0;
+
+    }
+
+    #logo__divider {
+        margin: 0.5rem 0;
+    }
+
+    .footer__nav {
+        display: none;
+        margin: 0.5rem o;
+        justify-items: center;
+    }
+
+    .contact__section {
+        width: 100%;
+        text-align: center;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .contato__footer {
+        width: 100%;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato__item {
+        display: flex;
+        padding-bottom: 0.5rem;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .contato__to {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #171717;
+        line-height: 1;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .signing {
+        background-color: #7fd10c;
+        width: 100%;
+        position: relative;
+        justify-items: center;
+        padding-bottom: 16px;
+    }
+
+    .signing p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        text-align: center;
+        padding: 0 5vw;
+    }
+}
